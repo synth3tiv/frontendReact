@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 // Importaciones de componentes externos
 import { Boton } from "./components/Boton";
-import { Saludo } from "./components/Boton";
 // Importación de hojas de estilos
 import "./App.css";
 // Importación de imagen
@@ -55,10 +54,9 @@ function App() {
       >
         Regresar el contador a 0
       </button>
-      <Boton parametro1={"Hola soy el parametro"}/>
+      <Boton parametro1={"Hola soy el parametro"} />
       <span>Mi nombre es: {nombre}</span>
       {/* <p>Mi nombre es: {nombre}</p> */}
-      <Saludo parametro2={"Saludar"}/>
     </div>
   );
 }

@@ -1,26 +1,15 @@
 import React, { useState } from "react";
 import "./styles.css";
-export function Boton({ parametro1 }) {
-  const [textoBoton, setTextoBoton] = useState("Soy un boton");
+export function Boton() {
+  const [textoBoton, setTextoBoton] = useState("Saludar");
   return (
     <button
-      // className="boton-componente"
+      className="boton-componente"
       onClick={() => {
-        setTextoBoton("Soy Jordi");
+        setTextoBoton("Hola Jordi!");
       }}
     >
-      {parametro1}
+      {textoBoton}
     </button>
   );
-}
-// componente boton que saluda
-export function Saludo( { parametro2 } ) {
-  const [textoSaludo, setSaludo] = useState("Saludar a Jordi >D");
-  return (
-    <button onClick={() =>{
-      setSaludo("(: Hola Jordi !");
-    }}>
-      {parametro2}
-    </button>
-  );
-}
+};
